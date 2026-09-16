@@ -1,0 +1,193 @@
+# ==============================
+# Python 数据分析项目 .gitignore
+# ==============================
+
+# ---------- 虚拟环境 ----------
+venv/
+.venv/
+env/
+.env/
+ENV/
+virtualenv/
+.virtualenv/
+pythonenv*/
+
+# Conda / Poetry / Pipenv / PDM 环境
+.conda/
+conda-meta/
+.python-version
+poetry.lock
+pdm.lock
+Pipfile.lock
+
+# ---------- Python 缓存与编译产物 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+
+# C 扩展 / 打包
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# 字节码缓存工具
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytest_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+.cache/
+.pylint.d/
+
+# 测试与覆盖率
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+coverage.xml
+junit*.xml
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+# JupyterLab / Notebook 工作区状态
+.jupyter/
+.local/
+
+# ---------- IDE / 编辑器配置 ----------
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Spyder
+.spyderproject
+.spyproject
+.spyderworkspace
+
+# RStudio (混用)
+.Rproj.user
+.Rhistory
+.RData
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+.*.sw?
+.#*
+\#*\#
+.\#*
+
+# 其他编辑器
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# ---------- 数据与中间产物 ----------
+# 默认不忽略 data/，小数据集（如 Titanic）适合入库；
+# 若数据体积大或不宜公开，取消下面注释
+# data/raw/*
+# data/interim/
+# data/processed/
+# data/external/
+# .data/
+
+# 代码生成的输出，默认忽略
+outputs/
+
+# 若要忽略本机的大体积数据文件（如不放 Git 的 CSV / Excel），取消下面注释
+# *.csv
+# *.tsv
+# *.xlsx
+# *.xls
+# *.parquet
+# *.feather
+# *.arrow
+# *.h5
+# *.hdf5
+# *.pkl
+# *.pickle
+# *.joblib
+# *.npy
+# *.npz
+# *.mat
+# *.dta
+# *.sas7bdat
+
+# ---------- 模型与实验产物 ----------
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.tflite
+*.safetensors
+runs/
+wandb/
+lightning_logs/
+mlruns/
+
+# ---------- 日志与临时文件 ----------
+*.log
+logs/
+*.tmp
+*.temp
+tmp/
+.tmp/
+
+# ---------- 环境变量与密钥 ----------
+.env
+*.env
+.env.*
+!.env.example
+secrets.*
+*.pem
+*.key
+
+# ---------- 文档 / 报告产物 ----------
+# 如果报告/图由代码自动生成，可取消下面注释
+# reports/figures/*.png
+# reports/figures/*.svg
+# reports/*.pdf
+# reports/*.html
+
+# ---------- 系统文件 ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+Icon?
+$RECYCLE.BIN/
